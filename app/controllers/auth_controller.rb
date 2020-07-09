@@ -1,5 +1,6 @@
 class AuthController < ApplicationController
     def login
+      # reset_session
     end
   
     def verify_username 
@@ -13,10 +14,10 @@ class AuthController < ApplicationController
       end
     end
 
-    def create
-      user = User.create(user_params)
-      redirect_to purchases_path
-end
+#     def create
+#       user = User.create(user_path)
+#       redirect_to user_path
+# end
     def logout
       session.clear
       redirect_to login_path

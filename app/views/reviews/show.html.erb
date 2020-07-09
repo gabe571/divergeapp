@@ -19,4 +19,4 @@
 <%# <%= link_to 'Delete', @review, method: :delete, class: 'delete-link' %>
 <%# <%= link_to 'Update', @review, method: :update, class: 'update-link' %> 
 <%= button_to 'Delete', review_path(@review), method: :delete, class: "btn btn-primary" %>
-<%= button_to 'Update', review_path(@review), method: :update, class: "btn btn-primary" %>
+<%= button_to 'Update', edit_review_path(@review), method: :get, class: "btn btn-primary" %>

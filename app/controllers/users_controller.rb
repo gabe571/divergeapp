@@ -8,10 +8,10 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
-    #   def create
-    #     user = User.create(user_params)
-    #     redirect_to purchases_path
-    # end
+      def create
+        user = User.create(user_params)
+        redirect_to purchases_path
+    end
 
     def edit
         @user = User.find(params[:id])

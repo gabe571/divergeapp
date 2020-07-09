@@ -12,6 +12,7 @@ class ReviewsController < ApplicationController
 
     def new
         @review = Review.new
+        @purchase_id = session[:purchase_id]
     end
 
 
@@ -25,16 +26,21 @@ class ReviewsController < ApplicationController
         end
     end
 
-    # def edit
-
-    # end
+    def edit
+        @review = Review.find(params[:id])
+    end
 
     def update
         @review = Review.find(params[:id])
-        review.update
-        redirect_to reviews_path
+        if @review.update(review_params)
+            redirect_to purchase_path(@review.purchase_id)
+        else
+            flash[:error] 
+            render :edit
+        end
     end
-   
+
+
 def destroy
    @review = Review.destroy(params[:id])
     redirect_to reviews_path

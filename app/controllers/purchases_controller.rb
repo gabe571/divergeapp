@@ -7,6 +7,7 @@ class PurchasesController < ApplicationController
 
     def show
         @purchase = Purchase.find(params[:id])
+        session[:purchase_id] = @purchase.id
     end
 
     def create
