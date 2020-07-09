@@ -1,0 +1,22 @@
+<%= flash[:message] %>
+<div class="main">
+  <div class='ui raised segment'>
+    <div class='ui fluid card'>
+      <div class='huge content'>
+        <div class='header'><h1 class="review-game"> Rating Given <%= @review.purchase_id %></h1></div>
+        <div class="meta">
+          <span class="date">
+            <h3 id="review-given"><%= @review.reviewed_game %></h3>
+          </span>
+        </div>
+        <div class="description">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# <%= link_to 'Delete', @review, method: :delete, class: 'delete-link' %>
+<%# <%= link_to 'Update', @review, method: :update, class: 'update-link' %> 
+<%= button_to 'Delete', review_path(@review), method: :delete, class: "btn btn-primary" %>
+<%= button_to 'Update', review_path(@review), method: :update, class: "btn btn-primary" %>

@@ -1,0 +1,16 @@
+<div style="margin-top: 120px;">
+
+  <h1 id="user-form-header">Create a User</h1>
+  <%= form_for :auth do |f| %>
+    <div class="field">
+      <%= f.text_field(:name, placeholder: 'Enter the user name...') %>
+    </div>
+    <div class="field">
+      <%= f.text_field :password, placeholder: 'Enter the password here...' %>
+    </div>
+    <div class="field"> 
+    </div>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>
+

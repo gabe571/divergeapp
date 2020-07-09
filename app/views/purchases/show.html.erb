@@ -1,0 +1,9 @@
+<h1><%= @purchase.game.title %></h1> 
+<h1> CURRENT REVIEWS! </h1>
+<h2><% @purchase.reviews.each do |review| %></h2>
+<%= link_to review.reviewed_game, review_path %><br>
+<% end %>
+<h1> WRITE YOUR OWN REVIEW! </h1>
+<%= link_to "Write Your Reviews!", new_review_path(purchase_id: @purchase.id)  %>
+
+

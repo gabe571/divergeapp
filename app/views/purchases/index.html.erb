@@ -1,0 +1,8 @@
+<h1>Gaming Dashboard </h1>
+
+<% @purchases.each do |purchase| %>
+<%# <%= purchase.game %><br>   
+    <%= link_to purchase.game.title, purchase %><br>   
+
+
+<% end %>

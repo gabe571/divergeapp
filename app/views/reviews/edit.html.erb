@@ -1,0 +1,8 @@
+<h1>Update Review! </h1>
+
+<%= form_for @review do |f| %>
+    <%= f.text_area(:reviewed_game, :size => "100x20") %>
+    <%= f.number_field(:rating, within: 0..5) %>
+    <%= f.hidden_field :purchase_id, value: @purchase_id %>
+    <%= f.submit "Submit Review" %>
+<% end %>
