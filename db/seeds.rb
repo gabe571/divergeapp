@@ -43,7 +43,11 @@ users = [
     {name: "David", password: "12356" },
     {name: "Daniel", password: "3456"} ,
     {name: "April", password: "4567"},
-    {name: "Alice", password: "9899"}
+    {name: "Alice", password: "9899"},
+    {name: "Jason", password: "12356" },
+    {name: "Alvin", password: "3456"} ,
+    {name: "Erin", password: "4567"},
+    {name: "Jackson", password: "9899"}
   ]
   
   users.each {|user| User.create(user)}
@@ -66,17 +70,35 @@ purchases = [
 purchases.each {|purchase| Purchase.create(purchase)}
 
   reviews = [
-    {reviewed_game: "******* One of the best games on PS4 hands down.
-      I have played Diablo since the first one on PC and even though nothing can beat 2 in my opinion this is close.
-      The vanilla version is nothing compared to Reaper of Souls, it added a whole new game to Diablo, with rifts and greater rifts and the new chapter V and also adventure mode where its endless and you can farm high end gear. Blizzard are still releasing patches adding new seasons and content so you get ALOT of gameplay and content for the price.
-      Its so good I have got platinum on 3 different versions and still go back to it every now and again.
-      It also has multiplayer of up to 4 players which is also fun, challenging and more rewarding.
-      I bought this for my son for Christmas so we can play multiplayer even though I have full level 70 characters *****", rating: 5, purchase_id: 1 },
-    {reviewed_game: "******Ignore the negative reviews, all the dlc downloads automatically so who cares if it’s on the disc or not. Played the original version on PS3 which was good but this PS4 version is 100 times better! If you love character building RPGs like Baldur’s Gate and Champions of Norrath get this now*****", rating: 5, purchase_id: 2 },
-    {reviewed_game: "******The base game is good i had it on previous console generation. But the expansions really make the game re-playable. Just a disappointing price for a very old game. they do bring out new seasons and some content tweaks, so it does keep the game fresh. worth a play.******", rating: 5, purchase_id: 3 },
-    {reviewed_game: "*****This Game was ok, I have def played better ones! ******", rating: 3, purchase_id: 4 }
-  ]
   
+  {reviewed_game: "******* One of the best games on PS4 hands down.
+    I have played Diablo since the first one on PC and even though nothing can beat 2 in my opinion this is close.
+    The vanilla version is nothing compared to Reaper of Souls, it added a whole new game to Diablo, with rifts and greater rifts and the new chapter V and also adventure mode where its endless and you can farm high end gear. Blizzard are still releasing patches adding new seasons and content so you get ALOT of gameplay and content for the price.
+    Its so good I have got platinum on 3 different versions and still go back to it every now and again.
+    It also has multiplayer of up to 4 players which is also fun, challenging and more rewarding.
+    I bought this for my son for Christmas so we can play multiplayer even though I have full level 70 characters *****", rating: 5, purchase_id: 1 },
+  {reviewed_game: "******Ignore the negative reviews, all the dlc downloads automatically so who cares if it’s on the disc or not. Played the original version on PS3 which was good but this PS4 version is 100 times better! If you love character building RPGs like Baldur’s Gate and Champions of Norrath get this now*****", rating: 5, purchase_id: 1},
+  {reviewed_game: "******The base game is good i had it on previous console generation. But the expansions really make the game re-playable. Just a disappointing price for a very old game. they do bring out new seasons and some content tweaks, so it does keep the game fresh. worth a play.******", rating: 5, purchase_id: 1 },
+  {reviewed_game: "*****This Game was ok, I have def played better ones! ******", rating: 3, purchase_id: 2 },
+  {reviewed_game: "******* One of the best games on PS4 hands down.
+    I have played Diablo since the first one on PC and even though nothing can beat 2 in my opinion this is close.
+    The vanilla version is nothing compared to Reaper of Souls, it added a whole new game to Diablo, with rifts and greater rifts and the new chapter V and also adventure mode where its endless and you can farm high end gear. Blizzard are still releasing patches adding new seasons and content so you get ALOT of gameplay and content for the price.
+    Its so good I have got platinum on 3 different versions and still go back to it every now and again.
+    It also has multiplayer of up to 4 players which is also fun, challenging and more rewarding.
+    I bought this for my son for Christmas so we can play multiplayer even though I have full level 70 characters *****", rating: 5, purchase_id: 2 },
+  {reviewed_game: "******Ignore the negative reviews, all the dlc downloads automatically so who cares if it’s on the disc or not. Played the original version on PS3 which was good but this PS4 version is 100 times better! If you love character building RPGs like Baldur’s Gate and Champions of Norrath get this now*****", rating: 5, purchase_id: 1},
+  {reviewed_game: "******The base game is good i had it on previous console generation. But the expansions really make the game re-playable. Just a disappointing price for a very old game. they do bring out new seasons and some content tweaks, so it does keep the game fresh. worth a play.******", rating: 5, purchase_id: 2 },
+  {reviewed_game: "*****This Game was ok, I have def played better ones! ******", rating: 3, purchase_id: 3 },
+  {reviewed_game: "******* One of the best games on PS4 hands down.
+    I have played Diablo since the first one on PC and even though nothing can beat 2 in my opinion this is close.
+    The vanilla version is nothing compared to Reaper of Souls, it added a whole new game to Diablo, with rifts and greater rifts and the new chapter V and also adventure mode where its endless and you can farm high end gear. Blizzard are still releasing patches adding new seasons and content so you get ALOT of gameplay and content for the price.
+    Its so good I have got platinum on 3 different versions and still go back to it every now and again.
+    It also has multiplayer of up to 4 players which is also fun, challenging and more rewarding.
+    I bought this for my son for Christmas so we can play multiplayer even though I have full level 70 characters *****", rating: 5, purchase_id: 3 },
+  {reviewed_game: "******Ignore the negative reviews, all the dlc downloads automatically so who cares if it’s on the disc or not. Played the original version on PS3 which was good but this PS4 version is 100 times better! If you love character building RPGs like Baldur’s Gate and Champions of Norrath get this now*****", rating: 5, purchase_id: 3},
+  {reviewed_game: "******The base game is good i had it on previous console generation. But the expansions really make the game re-playable. Just a disappointing price for a very old game. they do bring out new seasons and some content tweaks, so it does keep the game fresh. worth a play.******", rating: 5, purchase_id: 4 },
+  {reviewed_game: "*****This Game was ok, I have def played better ones! ******", rating: 3, purchase_id: 4 },
+  ]
   reviews.each {|review| Review.create(review)}
   
     
