@@ -3,6 +3,7 @@ class GamesController < ApplicationController
         @game = Game.find(params[:id])
     end
 
+    def
 private
 
 def game_params

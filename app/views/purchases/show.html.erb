@@ -1,11 +1,14 @@
 Game Title: <h1><%= @purchase.game.title %></h1>
 Release Date: <h1><%= @purchase.game.release_date %></h1>  
-Game Studio: <h1><%= @purchase.game.game_studio.name %></h1> 
+Game Studio: <h1><%= @purchase.game.game_studio.name %></h1>
+Address: <h1><%= @purchase.game.game_studio.location %></h1>  
 <h1> CURRENT REVIEWS! </h1>
 <h2><% @purchase.reviews.each do |review| %></h2>
 <%= link_to review.reviewed_game, review_path(review) %><br>
 <% end %>
 <h1> WRITE YOUR OWN REVIEW! </h1>
-<%= link_to "Write Your Reviews!", new_review_path(purchase_id: @purchase.id)  %>
+<%= link_to "Write Your Review!", new_review_path(purchase_id: @purchase.id)  %><br>
 
 
+
+<%= link_to 'Previous Page', url_for(:back) %>

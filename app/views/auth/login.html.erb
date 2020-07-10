@@ -1,7 +1,7 @@
  <div class="main" >
   <%= flash[:message] %>
   <%= form_for :auth do |f| %>
-  <h1> Returning User?</h1>
+  <h1> Welcome! Please Sign in</h1>
     Username <%= f.text_field :username %><br>
     Password <%= f.password_field :password %>
         <%= f.submit "Login" %><br>

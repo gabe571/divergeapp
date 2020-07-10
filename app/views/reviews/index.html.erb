@@ -1,5 +1,7 @@
+<h1> Current Reviews </h1>
 <% @reviews.each do |review| %>
 <%= link_to review.reviewed_game, review %><br>
 <% end %>
-
-<%= link_to "New Review", new_review_path %>
+<h1>Write your own review!</h1>
+<%= link_to "New Review", new_review_path %><br>
+<%= link_to 'Previous Page', url_for(:back) %>

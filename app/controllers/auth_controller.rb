@@ -1,6 +1,6 @@
 class AuthController < ApplicationController
     def login
-      # reset_session
+      # reset_session 
     end
   
     def verify_username 
