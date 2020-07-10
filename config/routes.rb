@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :game_studios
   resources :users
   
-  root to: "users#index"
+  # root to: 'auth#login'
   get 'create', to: "users#new"
   get '/login', to: "auth#login", as: "login" 
   post '/login', to: "auth#verify_username"

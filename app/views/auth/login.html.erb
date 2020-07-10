@@ -1,7 +1,10 @@
  <div class="main" >
   <%= flash[:message] %>
   <%= form_for :auth do |f| %>
-  <h1> Welcome! Please Sign in</h1>
+  <h1> Welcome to the Diverge App!</h1>
+<h3>Home to your one stop shop for all your game review needs</h3>
+<div>
+<h1>Please Login Here</h1>
     Username <%= f.text_field :username %><br>
     Password <%= f.password_field :password %>
         <%= f.submit "Login" %><br>
