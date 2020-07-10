@@ -19,7 +19,7 @@ class ReviewsController < ApplicationController
     def create
         @review = Review.new(review_params)
        if  @review.save
-         redirect_to reviews_path
+         redirect_to purchase_path(@review.purchase_id)
         else
             flash[:alert] = "Review Did Not Post"
             render :new
@@ -43,7 +43,7 @@ class ReviewsController < ApplicationController
 
 def destroy
    @review = Review.destroy(params[:id])
-    redirect_to reviews_path
+    redirect_to purchase_path(@review.purchase_id)
 end
 
 private 
